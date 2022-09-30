@@ -1,7 +1,7 @@
-import React from 'react';
-import CartItem from './CartItem';
-import { connect } from 'react-redux';
-import { CLEAR_CART, GET_TOTALS } from '../actions';
+import React from "react";
+import CartItem from "./CartItem";
+import { connect } from "react-redux";
+import { CLEAR_CART, GET_TOTALS } from "../actions";
 const CartContainer = ({ cart = [], total, dispatch }) => {
   React.useEffect(() => {
     dispatch({ type: GET_TOTALS });
@@ -47,6 +47,8 @@ const CartContainer = ({ cart = [], total, dispatch }) => {
     </section>
   );
 };
+
+//Hello World
 
 function mapStateToProps(store) {
   //In the react component in the web, this also has the dispatch method
